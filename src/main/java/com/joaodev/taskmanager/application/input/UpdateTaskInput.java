@@ -1,0 +1,10 @@
+package com.joaodev.taskmanager.application.input;
+
+import com.joaodev.taskmanager.domain.TaskStatus;
+
+import java.util.Optional;
+
+public record UpdateTaskInput(Optional<String> title,
+                              Optional<String> description,
+                              Optional<TaskStatus> status) {
+}
